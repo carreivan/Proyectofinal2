@@ -1,0 +1,558 @@
+/* MOBILE */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  
+}
+
+.sidebarContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #1e213a;
+  background-image:url(../app/img/nubes1.png) ;
+  background-repeat: no-repeat;
+  background-position: 40% 20%;
+  
+  
+}
+
+.mainContainer {
+  width: 100%;
+  height: auto;
+  background-color: #100e1d;
+}
+
+.textAppContainer {
+  width: 80%;
+}
+
+.textApp {
+  color: #e7e7eb;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section1 {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+
+  background-color: #100e1d;
+  gap: 60px;
+}
+
+.section2 {
+  width: 100%;
+  height: 100vh;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a09fb1;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #100e1d;
+}
+
+.name {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* COMPONENTS */
+
+/* CARD */
+
+.containerCard {
+  min-width: 120px;
+  height: 177px;
+  margin: 0;
+  background-color: #1e213a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tempMax {
+  color: #e7e7eb;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tempMin {
+  color: #a09fb1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* MENU */
+.menuContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e213a;
+  z-index: 2;
+  position: absolute;
+  transform: translateY(0%);
+}
+
+.menuDesative {
+  transform: translateY(100%);
+  display: none;
+}
+
+.searchContainer {
+  display: flex;
+  gap: 15px;
+  width: 350;
+  position: relative;
+}
+
+.closeContainer {
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+  align-self: end;
+}
+
+.desactive {
+  display: none;
+}
+
+.closeIcon {
+  width: 24px;
+  height: 24px;
+  color: #e7e7eb;
+}
+
+.search {
+  width: 250px;
+  height: 48px;
+  border: 1px solid #e7e7eb;
+  color: #e7e7eb;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #1e213a;
+  position: relative;
+  z-index: 0;
+  padding-left: 40px;
+  font-family: inherit;
+}
+
+.searchIcon {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  left: 10px;
+  color: #616475;
+  font-size: 20px;
+}
+
+.searchButton {
+  background-color: #3c47e9;
+  color: #e7e7eb;
+  width: 86px;
+  height: 50px;
+  border: none;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.divCity {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  gap: 20px;
+}
+
+.iconCity {
+  visibility: hidden;
+}
+
+.selectCity {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selectCity:hover {
+  border: 1px solid #616475;
+}
+
+.selectCity:hover > .iconCity {
+  visibility: visible;
+  color: #616475;
+  font-size: 24px;
+}
+
+.cityName {
+  font-size: 16px;
+  font-weight: 500;
+  color: #e7e7eb;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* ASIDE */
+
+.asideContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+ 
+  /*codigo modificado*/
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.searchPlacesButton {
+  width: 160px;
+  height: 40px;
+  border: none;
+  background-color: #6e707a;
+  color: #e7e7eb;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.locationButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6e707a;
+  color: #e7e7eb;
+  font-size: 22px;
+}
+
+.imgContainer {
+  height: 280px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.textContent {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temp {
+  color: #e7e7eb;
+  font-size: 144px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.description {
+  font-size: 36px;
+  font-weight: 600;
+  color: #a09fb1;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.date {
+  color: #88869d;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  color: #88869d;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.units {
+  color: #a09fb1;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.unitContainer {
+  display: none;
+}
+
+/* DAYS CONTAINER */
+.daysContainer {
+  width: 80%;
+  height: 620px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px;
+}
+
+.divInvisible {
+  width: 120px;
+  height: 177px;
+  margin: 0;
+  visibility: hidden;
+}
+
+/* INFORMATION CONTAINER*/
+.divInformation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* INFO */
+
+.containerInfo {
+  width: 328px;
+  height: 204px;
+  background-color: #1e213a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.containerInfo2 {
+  width: 328px;
+  height: 159px;
+  background-color: #1e213a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.titleInfo {
+  font-size: 16px;
+  font-weight: 500;
+  color: #e7e7eb;
+  margin-top: 20px;
+}
+
+.principalInfo {
+  font-size: 64px;
+  font-weight: 700;
+  color: #e7e7eb;
+  margin: 0;
+}
+
+.infoUnit {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+/* WIND */
+.navigationDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.navigationUnit {
+  color: #e7e7eb;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.iconNavigation {
+  font-size: 30px;
+  color: #fff;
+}
+
+/* HUMIDITY */
+
+.humidityBar {
+  width: 100%;
+  height: 8px;
+  background-color: #e7e7eb;
+  border-radius: 10px;
+}
+
+.humidityBarYellow {
+  width: 84%;
+  height: 8px;
+  background-color: #ffec65;
+  border-radius: 10px;
+}
+
+.humidityBarNumber {
+  font-size: 12px;
+  font-weight: 700;
+  color: #a09fb1;
+}
+
+/* DESKTOP */
+
+@media (min-width: 500px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  /*ASIDE CONTAINER*/
+
+  .sidebarContainer {
+    width: 30%;
+  }
+
+  .imgContainer {
+    height: 370px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .textContent {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .temp {
+    color: #e7e7eb;
+    font-size: 144px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .description {
+    font-size: 36px;
+    font-weight: 600;
+    color: #a09fb1;
+    margin-top: 45px;
+    margin-bottom: 35px;
+  }
+
+  .date {
+    color: #88869d;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+    color: #88869d;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .mainContainer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .unitContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 724px;
+    margin-bottom: 35px;
+  }
+
+  .divUnits {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: end;
+
+    gap: 10px;
+  }
+
+  .unitButtonC {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #e7e7eb;
+    color: #110e3c;
+    border: none;
+  }
+
+  .unitButtonF {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #585676;
+    color: #e7e7eb;
+    border: none;
+  }
+
+  /* DAYS CONTAINER */
+  .daysContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 220px;
+  }
+
+  .divInvisible {
+    display: none;
+  }
+
+  /* INFORMATION CONTAINER*/
+
+  .divInformation {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+
+  .textAppContainer {
+    width: 699px;
+  }
+}
